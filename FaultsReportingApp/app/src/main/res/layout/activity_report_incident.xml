@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/lut">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".ReportIncident">
+
+        <RelativeLayout
+            android:layout_width="374dp"
+            android:layout_height="521dp">
+
+            <!--<Spinner
+                android:id="@+id/spnDescriptn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/button"
+                android:layout_alignParentStart="true"
+                android:layout_weight="1"
+                android:entries="@array/issueDescr"
+                android:visibility="visible" /> -->
+
+            <TextView
+                android:id="@+id/txtTitle2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="12dp"
+                android:maxLines="10"
+                android:text="Report Incident"
+                android:textSize="34dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnProceed"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="0dp"
+                android:text=" Step 2 >>>" />
+
+            <Spinner
+                android:id="@+id/spnDept"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="194dp"
+                android:layout_weight="1"
+                android:entries="@array/issuesType"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="158dp"
+                android:layout_above="@+id/btnProceed" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_above="@+id/imageView"
+                android:text="Upload Picture" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="109dp"
+                android:layout_height="26dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="208dp" />
+
+            <EditText
+                android:id="@+id/txtDescr"
+                android:layout_width="372dp"
+                android:layout_height="55dp"
+                android:layout_above="@+id/spnDept"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="-194dp"
+                android:ems="10"
+                android:hint="What is the nature of your request?"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="79dp"
+                android:text="1.Service"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</ScrollView>

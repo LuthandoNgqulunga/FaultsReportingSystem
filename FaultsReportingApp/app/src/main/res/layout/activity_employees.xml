@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="?attr/colorControlHighlight"
+    tools:context=".Employees"
+    android:background="@drawable/col1">
+
+    <RelativeLayout
+        android:id="@+id/spnEmpDep"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="13dp"
+            android:text="             Add New Employee"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/txtSurname"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/txtName"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Surname"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/txtName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="87dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="textPersonName" />
+
+        <Spinner
+            android:id="@+id/spnGender"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/txtSurname"
+            android:entries="@array/GenderItems"
+            android:visibility="visible" />
+
+        <EditText
+            android:id="@+id/txtContact"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/spnGender"
+            android:ems="10"
+            android:hint="Phone number"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/txtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txtContact"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textPersonName" />
+
+        <Spinner
+            android:id="@+id/spnUserRole"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/spnDepartment"
+            android:entries="@array/empRole"
+            android:visibility="visible" />
+
+        <Spinner
+            android:id="@+id/spnDepartment"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txtEmail"
+            android:entries="@array/dep"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/btnAddEmp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="64dp"
+            android:text="SAVE EMPLOYEE DETAILS" />
+
+        <!--  <Button
+              android:id="@+id/btnSend"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_alignParentBottom="true"
+              android:layout_alignParentStart="true"
+              android:layout_alignParentLeft="true"
+              android:layout_marginBottom="50dp"
+              android:text="NOTIFY THE EMPLOYEE" />
+          -->
+
+    </RelativeLayout>
+
+
+</LinearLayout>

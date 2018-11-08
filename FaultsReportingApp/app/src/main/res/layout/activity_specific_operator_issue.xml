@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SpecificOperatorIssue"
+    android:background="@drawable/col">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_weight="1"
+            android:text="UPDATE OR CLOSE ISSUE"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/txtincID"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_above="@+id/txtDescription"
+            android:layout_alignParentStart="true"
+            android:text="TextView"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txtDescription"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_above="@+id/txtDepartment"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:text="TextView"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txtDepartment"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_above="@+id/txtStatus"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:text="TextView"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txtStatus"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_above="@+id/txtDate"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:text="TextView"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txtDate"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_above="@+id/txtAddress"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:text="TextView"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txtAddress"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_above="@+id/imageView2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:text="TextView"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/txtIncBody"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/imageView2"
+            android:layout_marginTop="-147dp"
+            android:ems="10"
+            android:hint="Comment"
+            android:inputType="textMultiLine" />
+
+        <Button
+            android:id="@+id/btnShow"
+            android:layout_width="176dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txtIncBody"
+            android:layout_weight="1"
+            android:text="UPDATE" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="203dp"
+            android:layout_height="126dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="147dp"
+            android:drawable="@drawable/admin" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="201dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/txtIncBody"
+            android:text="CLOSE" />
+
+    </RelativeLayout>
+
+</LinearLayout>

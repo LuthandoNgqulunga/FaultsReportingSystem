@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:background="@drawable/community">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/txtName1"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="95dp"
+            android:hint="Username"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/txtPswd1"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+
+            android:layout_below="@+id/txtName1"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/txtPswd1"
+            android:layout_marginTop="40dp"
+            android:text="Login" />
+
+
+        <Button
+            android:id="@+id/btnSignup"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@+id/btnLogin"
+            android:text="Sign up" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Signup"
+    android:background="@drawable/col">
+
+    <RelativeLayout
+
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        >
+
+        <EditText
+            android:id="@+id/txtName1"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_above="@+id/txtSurname1"
+            android:layout_alignParentStart="true"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="FName"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/txtSurname1"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_above="@+id/spnGender1"
+            android:layout_alignParentStart="true"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Surname"
+            android:inputType="textPersonName" />
+
+        <Spinner
+            android:id="@+id/spnGender1"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+
+            android:layout_above="@+id/txtContact1"
+
+            android:layout_alignParentStart="true"
+            android:drawSelectorOnTop="true"
+            android:entries="@array/GenderItems" />
+
+        <EditText
+            android:id="@+id/txtContact1"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_above="@+id/txtEmail1"
+            android:layout_alignParentStart="true"
+            android:hint="Contact"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/txtEmail1"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_above="@+id/txtPswd1"
+            android:layout_alignParentStart="true"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress|textPersonName" />
+
+        <EditText
+            android:id="@+id/txtPswd1"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+
+            android:layout_centerVertical="true"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="Password" />
+
+        <EditText
+            android:id="@+id/txtPswd2"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+
+            android:layout_below="@+id/txtPswd1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Verify Password" />
+
+        <Button
+            android:id="@+id/btnSignup1"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:layout_alignParentBottom="true"
+
+            android:layout_marginBottom="114dp"
+            android:text="Sign up" />
+
+        <Button
+            android:id="@+id/btnLogin1"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="40dp"
+            android:text="Login" />
+
+    </RelativeLayout>
+
+</LinearLayout>

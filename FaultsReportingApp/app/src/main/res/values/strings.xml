@@ -1,0 +1,131 @@
+<resources>
+    <string name="app_name">FaultsReportingApp</string>
+
+    <string-array name="stateIssues">
+        <item>Select status</item>
+        <item>Closed</item>
+    </string-array>
+
+    <string-array name="empRole">
+        <item>Employee Role</item>
+        <item>Technical Labour</item>
+        <item>System Administrator</item>
+    </string-array>
+
+    <string-array name="GenderItems">
+        <item>Gender</item>
+        <item>Female</item>
+        <item>Male</item>
+    </string-array>
+
+    <string-array name="role">
+        <item>User role</item>
+        <item>Citizen User</item>
+        <item>Clerk</item>
+        <item>Technical Labour</item>
+        <item>System Admin</item>
+    </string-array>
+    <string-array name="dep">
+        <item>Emp Department</item>
+        <item>Electricity</item>
+        <item>Water and Sanitation</item>
+        <item>Road</item>
+        <item>Management</item>
+    </string-array>
+    <string-array name="issuesType">
+        <item>Incident type</item>
+        <item>Electricity</item>
+        <item>Water and Sanitation</item>
+        <item>Environmental issues</item>
+    </string-array>
+    <string-array name="issueDescr">
+        <item>Incident description</item>
+        <item>City parks(Enquiries)</item>
+        <item>City parks(Maintanance)</item>
+        <item>Animal carcass removal</item>
+        <item>Electricity(Equipment damage amd exposure)</item>
+        <item>Electricity(street lighting)</item>
+        <item>Electricity(Pre-paid meter issues)</item>
+        <item>water burst</item>
+        <item>Meter issued</item>
+        <item>Sanitation issues</item>
+        <item>Road issues</item>
+        <item>Litter bins(Public)</item>
+        <item>Environmental Management</item>
+    </string-array>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_customer__main">Customer_Main</string>
+</resources>
